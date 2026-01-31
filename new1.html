@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AgriConnect</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5fff5; }
+    header { background: #2e7d32; color: white; padding: 15px; text-align: center; }
+    nav { background: #4caf50; display: flex; justify-content: space-around; padding: 10px; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 20px; }
+    .card { background: white; border-radius: 10px; padding: 15px; margin: 10px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .btn { background: #2e7d32; color: white; padding: 10px 15px; border: none; border-radius: 6px; cursor: pointer; }
+    .btn:hover { background: #1b5e20; }
+    footer { background: #2e7d32; color: white; text-align: center; padding: 10px; }
+    input, select { width: 100%; padding: 8px; margin: 6px 0; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>AgriConnect 🌱</h1>
+  <p>Direct Farmer to Consumer Hyperlocal Marketplace</p>
+</header>
+
+<nav>
+  <a href="#farmers">Farmers</a>
+  <a href="#consumers">Consumers</a>
+  <a href="#preorder">Pre-Order</a>
+  <a href="#assistant">Virtual Assistant</a>
+</nav>
+
+<section id="farmers">
+  <h2>👨‍🌾 Farmer Dashboard</h2>
+  <div class="card">
+    <h3>List Your Produce</h3>
+    <label>Crop Name</label>
+    <input placeholder="e.g. Tomatoes" />
+    <label>Expected Harvest Date</label>
+    <input type="date" />
+    <label>Quantity (kg)</label>
+    <input type="number" />
+    <button class="btn">Publish Listing</button>
+  </div>
+</section>
+
+<section id="consumers">
+  <h2>🧑‍🤝‍🧑 Consumer Marketplace</h2>
+  <div class="card">
+    <h3>Fresh Local Vegetables</h3>
+    <p><b>Farmer:</b> Ramesh (2 km away)</p>
+    <p><b>Crop:</b> Organic Tomatoes</p>
+    <p><b>Harvest:</b> Ready in 10 days</p>
+    <button class="btn">Contact Farmer</button>
+  </div>
+</section>
+
+<section id="preorder">
+  <h2>📦 Pre-Order System</h2>
+  <div class="card">
+    <label>Required Crop</label>
+    <input placeholder="e.g. Onions" />
+    <label>Quantity Needed</label>
+    <input type="number" />
+    <label>Delivery Date</label>
+    <input type="date" />
+    <button class="btn">Place Pre-Order</button>
+    <p style="margin-top:10px;">✔ Helps farmers plan cultivation<br>✔ Reduces food wastage<br>✔ Ensures fixed pricing</p>
+  </div>
+</section>
+
+<section id="assistant">
+  <h2>🤖 Virtual Assistant (Demo)</h2>
+  <div class="card">
+    <p>Hello! I can help you:</p>
+    <ul>
+      <li>✔ Find nearby farmers</li>
+      <li>✔ Explain prices in local language</li>
+      <li>✔ Guide first-time users step-by-step</li>
+    </ul>
+    <button class="btn" onclick="alert('Assistant: Fresh tomatoes will be ready in 10 days!')">Ask Assistant</button>
+  </div>
+</section>
+
+<section>
+  <h2>🌍 Real-Life & Virtual Applications</h2>
+  <div class="card">
+    <ul>
+      <li>Real farmers selling directly to local buyers</li>
+      <li>Digital payments for instant farmer income</li>
+      <li>Virtual assistant for non-technical users</li>
+      <li>Hyperlocal delivery coordination</li>
+      <li>Future AI price prediction & demand analysis</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>AgriConnect © 2026 | Team BEGINNERS</p>
+</footer>
+
+</body>
+</html>
